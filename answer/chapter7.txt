@@ -1,0 +1,19 @@
+1 简答题
+(1) 
+1. 加载（注册）数据库驱动（到JVM）。 Class.forName("com.mysql.jdbc.Driver");
+2. 建立（获取）数据库连接。 Connection con = DriverManager.getConnection("jdbc:mysql://localhost/test?user=root");
+3. 创建（获取）数据库操作对象。 Statement stmt = con.createStatement();
+4. 定义操作的SQL语句。	String sql = "select * from user";
+5. 执行数据库操作，获取并操作结果集。	ResultSet rs = stmt.executeQuery(sql);
+6. 关闭对象，回收数据库资源（关闭结果集-->关闭数据库操作对象-->关闭连接）。rs.close(); stmt.close(); con.close();
+
+(2)
+1. 相对比较安全，可以防止sql注入
+2. 有预编译功能，相同操作批量数据效率较高
+3. 代码的可读性和可维护性更高
+
+2 选择题
+(1) D
+(2) B
+(3) C
+(4) D

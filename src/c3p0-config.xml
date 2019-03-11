@@ -1,0 +1,11 @@
+<c3p0-config>
+	<default-config>
+		<property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/mydb</property>
+		<property name="user">root</property>
+		<property name="password"></property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+<!-- 		<property name="minPoolSize">5</property>
+		<property name="maxPoolSize">9</property>
+		<property name="acquireIncrement">2</property> -->
+	</default-config>
+</c3p0-config>

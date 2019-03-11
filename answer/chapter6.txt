@@ -1,0 +1,17 @@
+1 简答题
+(1) 
+1. 字节流处理的最基本单位为单个字节，它通常用来处理二进制数据。Java中最基本的两个字节流类是InputStream和OutputStream，它们分别代表了一组基本的输入字节流和输出字节流。
+2. 字符流处理的最基本单位为单个字符，它通常用来处理字符或者字符串。Java中最基本的两个字符流类是Reader和Writer，它们分别代表了一组基本的输入字符流和输出字符流。
+(2)
+1. 序列化是将对象的状态信息转换为可以存储或传输的字节序列形式的过程。把字节序列数据恢复为对象的过程称为对象的反序列化。
+2. 若要使一个类的对象具备序列化的能力，该类必须实现java.io.Serializable接口。
+3. 使用java.io.ObjectOutputStream对象的void writeObject(Object obj)方法，可以将一个对象进行序列化。
+4. 使用java.io.ObjectInputStream对象的Object readObject()方法，可以进行反序列化法读取对象。
+
+2 选择题
+(1) C
+(2) D
+(3) C
+(4) B
+(5) C
+(6) A

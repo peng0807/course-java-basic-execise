@@ -1,0 +1,18 @@
+1 简答题
+(1)
+JDK：Java Development Kit，Java开发工具包，如果要开发Java程序，则需要安装JDK，JDK中包含了Java源代码编译器、字节码解释器等开发工具，以及Java程序的运行环境JRE。
+JRE：Java Runtime Environment，Java运行时环境，是Java程序运行所依赖的平台，如果只是要运行Java程序，则只需安装JRE。JRE中包含了Java字节码解释器等运行Java程序的工具，以及Java程序运行时所依赖的库和Java虚拟机JVM。
+JVM：Java Virtual Machine，Java虚拟机，可以理解为一个在真实的主机系统上建立的一个虚拟主机系统，所有的Java程序都在这个虚拟主机系统上运行。对于不同的真实主机系统平台，需要安装不同版本的Java虚拟机。JVM屏蔽了底层系统平台的差异，实现了Java的跨平台特性：“一次编译，随处运行”。
+JDK > JRE > JVM
+(2)
+1.采用任意的文本编辑器编写Java的源代码文件Xxx.java，
+2.使用Java编译器编译源代码文件：javac Xxx.java，成功编译后会生成Java字节码文件，这个文件的内容不是二进制机器码，不能直接运行，通常也把这个文件称为Java类文件：Xxx.class。
+3.使用Java解释器解释执行类文件：java Xxx，注意解释执行时不要加上文件后缀名.class。而且可以在任意的系统平台上执行类文件，只要该系统平台上安装了对应的JRE。
+ 
+2 选择题
+(1) C B A
+(2) A C
+(3) B A
+(4) D
+(5) B C
+(6) C

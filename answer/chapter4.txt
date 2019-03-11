@@ -1,0 +1,22 @@
+1 简答题
+(1) 
+1. String 是不可变的字符序列, 因此在每次对 String 类型进行改变的时候其实都等同于生成了一个新的 String 对象，然后将指针指向新的 String 对象，所以经常要改变字符串长度的话不要使用string。
+2. StringBuffer 是线程安全的可变字符序列，每次都会对StringBuffer对象本身进行操作，而不是生成新的对象并改变对象引用，所以多数情况下推荐使用StringBuffer，特别是字符串对象经常要改变的情况。
+(2)
+1. 可以通过String类中定义的重载的静态方法valueOf，由各种基本数据类型值生成相应的String对象
+2. 各种基本数据类型的包装器类都提供了parseXxx(String str)，用以将字符串转换为对应的基本数据类型包装器对象
+(3) 
+1. 通过调用SimpleDateFormat对象的String format(Date)方法，可以将日期时间对象格式化成字符串，这个字符串的格式会符合创建SimpleDateFormat对象时使用的模式字符串。
+2. 通过调用SimpleDateFormat对象的Date parse(String)方法，可以将符合模式字符串的表示时间的字符串解析为Date对象。
+
+2 选择题
+(1) B
+(2) D
+(3) B
+(4) C
+(5) B
+(6) A
+(7) C
+(8) D
+(9) D
+(10) A
